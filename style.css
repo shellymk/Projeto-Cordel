@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 body
 {
     background-color: #f5f1e6;
@@ -20,26 +21,26 @@ header
 {
     background-color: #b56a50;
     width: 100%;
-    min-height: 30vh;
-    padding: 20px;
+    min-height: 300px;
+    padding-top: 80px;
     background-attachment: fixed;
 }
 header > h1
 {
     text-align: center;
     color: #3b1818;
-    font-size: clamp(1.5em, 8vw, 8em);
+    font-size: clamp(1.5em, 9vw, 9em);
     font-family: 'Passion One';
     
 }
 header > p
 {
-    font-family: ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
     text-align: center;
     padding: 10px;
 
 }
-#link1
+#linkheader
 {
     text-decoration: none;
     color:#E8DCC3 ;
@@ -47,57 +48,106 @@ header > p
 
     
 }
-#link1:hover
+#linkheader:hover
 {
     color: #500b0b ;
 }
 .embranco
 {
+    display: flex;
     background-color: #E8DCC3;
     padding: 10px;
     width: 100vw;
-    height: 75vh;
+    height: 100vh;
 
+}
+.pembranco
+{
+    
+
+    font-family: 'Sriracha';
+    color: rgb(0, 0, 0);
+    font-size: clamp(1.5em, 4vw, 3em);
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px ;
+    padding-top: 20px ;
+
+    margin-left: 30px;
+    margin-right: 20px ;
+    margin-bottom: 20px ;
+    margin-top: 20px ;
+    
+
+    position: relative;
+
+
+    width: 100% ;
+    min-height: 200px;
+    max-width: 500px;
+    line-height: normal;
+
+    display: flex;
+    text-align: left;
+
+    
+
+}
+.foto
+{
+    display: flex;
+    justify-content: start;
+
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    
+   
+    width: 100vw;
+    height: 87vh; 
 }
 #foto1
 {
     background-image: url('imagens/background001.jpg');
-    background-repeat: repeat-y;
-    background-position: center right;
-    background-size: cover;
-    background-attachment: fixed;  
-    
-    position: relative;
-    width: 100vw;
-    height: 75vh;
    
-}
-#foto1e1
-{
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: #00000065;
-    font-family: 'Dancing Script';
-    color: white;
-    font-size: clamp(2.2em, 4vw, 9vh);
-
-    position: absolute;
-    top: 12.2%;
-    left: 4%;
-    line-height: 8vh;
-
-    max-width: 42vw;
-    min-height: 43vh;
 }
 #foto2
 {
-    padding: 10px;
+    background-image: url('imagens/background002.jpg');
 
 }
-footer
+.pfotos
 {
-    left: auto;
-   
+    
+    background-color: #00000065;
+
+    font-family: 'Sriracha';
+    color: white;
+    font-size: clamp(1.5em, 4vw, 3em);
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px ;
+    padding-top: 20px ;
+
+    margin-left: 30px;
+    margin-right: 20px ;
+    margin-bottom: 20px ;
+    margin-top: 20px ;
+    
+
+    position: relative;
+
+
+    width: 100% ;
+    min-height: 200px;
+    max-width: 500px;
+    line-height: normal;
+
+    display: flex;
+    text-align: left;
 }
 #rodape
 {
@@ -105,7 +155,6 @@ footer
     color:#E8DCC3 ;
     font-weight: 500;
     background-color: #4B2E2B ;
-    border-radius: 2px;
     text-align: center;
     
 }
@@ -117,4 +166,3 @@ footer
     color: #B56A50;
     font-weight: bold;
 }
-.

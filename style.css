@@ -52,13 +52,34 @@ header > p
 {
     color: #500b0b ;
 }
+
 .embranco
 {
     display: flex;
     background-color: #E8DCC3;
-    padding: 10px;
-    width: 100vw;
-    height: 100vh;
+    background-size: cover ;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 20px  0px 50px 0px;
+    
+    width: 100%;
+    margin: 0 auto;
+
+}
+.embranco2
+{
+    display: flex;
+    background-color: #E8DCC3;
+    background-size: cover ;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 20px  0px 30px 0px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 100%;
+    margin: 0 auto;
 
 }
 .pembranco
@@ -67,32 +88,39 @@ header > p
 
     font-family: 'Sriracha';
     color: rgb(0, 0, 0);
-    font-size: clamp(1.5em, 4vw, 3em);
-
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px ;
-    padding-top: 20px ;
-
-    margin-left: 30px;
-    margin-right: 20px ;
-    margin-bottom: 20px ;
-    margin-top: 20px ;
-    
-
-    position: relative;
-
-
-    width: 100% ;
-    min-height: 200px;
-    max-width: 500px;
-    line-height: normal;
-
-    display: flex;
-    text-align: left;
+    font-size: clamp(1.5em, 5vw, 5em);
+    line-height: 2.1;
+   
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 
     
+    padding: 20px;
+    margin: 20px;
+    
+    width: clamp(289px, 50vw, 830px);
+    min-height: 400px;
+}
+.pembranco2
+{
+    
 
+    font-family: 'Sriracha';
+    color: rgb(0, 0, 0);
+    font-size: clamp(1.5em, 5vw, 5em);
+    line-height: 2.1;
+   
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    
+    padding: 20px;
+    margin: 20px;
+    
+    width: clamp(289px, 50vw, 830px);
+    min-height: 400px;
 }
 .foto
 {

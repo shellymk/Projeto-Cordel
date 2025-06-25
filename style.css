@@ -125,16 +125,15 @@ header > p
 .foto
 {
     display: flex;
-    justify-content: start;
 
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
     background-attachment: fixed;  
     
-   
-    width: 100vw;
-    height: 87vh; 
+    padding: 20px  0px 50px 0px;
+    width: 100%;
+    margin: 0 auto;
 }
 #foto1
 {
@@ -152,30 +151,20 @@ header > p
     background-color: #00000065;
 
     font-family: 'Sriracha';
-    color: white;
-    font-size: clamp(1.5em, 4vw, 3em);
+    color: rgb(255, 255, 255);
+    font-size: clamp(1.0em, 4.5vw, 4.5em);
+    line-height: 1.9;
+   
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px ;
-    padding-top: 20px ;
-
-    margin-left: 30px;
-    margin-right: 20px ;
-    margin-bottom: 20px ;
-    margin-top: 20px ;
     
-
-    position: relative;
-
-
-    width: 100% ;
-    min-height: 200px;
-    max-width: 500px;
-    line-height: normal;
-
-    display: flex;
-    text-align: left;
+    padding: 10px;
+    margin: 20px;
+    
+    width: clamp(290px, 49vw, 850px);
+    min-height: 150px;
 }
 #rodape
 {

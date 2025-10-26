@@ -4,193 +4,89 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1em;
 }
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-body
-{
-    background-color: #f5f1e6;
-    height: 100%; 
+
+:root 
+{   --fonte1: Verdana, Geneva, Tahoma, sans-serif; 
+    --fonte2: "Passion One", sans-serif;
+    --fonte3: "Sriracha", cursive;
 }
-main
+
+html, body 
 {
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+    
 }
-header
+header 
 {
-    background-color: #b56a50;
-    width: 100%;
-    min-height: 300px;
-    padding-top: 80px;
-    background-attachment: fixed;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header > h1
 {
-    text-align: center;
-    color: #3b1818;
-    font-size: clamp(1.5em, 9vw, 9em);
-    font-family: 'Passion One';
-    
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 header > p
 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    text-align: center;
-    padding: 10px;
-
+    padding-bottom: 50px;
 }
-#linkheader
+a
 {
+    color: rgb(126, 102, 102);
     text-decoration: none;
-    color:#E8DCC3 ;
-    font-weight: bold;
-
-    
+    font-weight: bolder;
 }
-#linkheader:hover
+a:hover
 {
-    color: #500b0b ;
+    text-decoration: underline;
 }
-
-.embranco
+section
 {
-    display: flex;
-    background-color: #E8DCC3;
-    background-size: cover ;
-    background-position: center center;
-    background-attachment: fixed;
-    padding: 20px  0px 50px 0px;
-    
-    width: 100%;
-    margin: 0 auto;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height:2em ;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.7vw;
 
 }
-.embranco2
+section.normal
 {
-    display: flex;
-    background-color: #E8DCC3;
-    background-size: cover ;
-    background-position: center center;
-    background-attachment: fixed;
-    padding: 20px  0px 30px 0px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 20px;
-
-    width: 100%;
-    margin: 0 auto;
-
-}
-.pembranco
-{
-    
-
-    font-family: 'Sriracha';
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    font-size: clamp(1.5em, 5vw, 5em);
-    line-height: 2.1;
-   
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-
-    
-    padding: 20px;
-    margin: 20px;
-    
-    width: clamp(289px, 50vw, 830px);
-    min-height: 400px;
 }
-.pembranco2
-{
-    
 
-    font-family: 'Sriracha';
-    color: rgb(0, 0, 0);
-    font-size: clamp(1.5em, 5vw, 5em);
-    line-height: 2.1;
-   
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-
-    
-    padding: 20px;
-    margin: 20px;
-    
-    width: clamp(289px, 50vw, 830px);
-    min-height: 400px;
-}
-.foto
+section.imagem
 {
-    display: flex;
-    justify-content: start;
-
-    background-size: cover;
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    
-   
-    width: 100vw;
-    height: 87vh; 
-}
-#foto1
-{
-    background-image: url('imagens/background001.jpg');
-   
-}
-#foto2
-{
-    background-image: url('imagens/background002.jpg');
-
-}
-.pfotos
-{
-    
-    background-color: #00000065;
-
-    font-family: 'Sriracha';
+    background-color: rgb(51, 48, 48);
     color: white;
-    font-size: clamp(1.5em, 4vw, 3em);
-
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px ;
-    padding-top: 20px ;
-
-    margin-left: 30px;
-    margin-right: 20px ;
-    margin-bottom: 20px ;
-    margin-top: 20px ;
+    background-image: url(imagens/background001.jpg);
+}
+section.imagem > p
+{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.24);
+    padding: 5px;
     
 
-    position: relative;
-
-
-    width: 100% ;
-    min-height: 200px;
-    max-width: 500px;
-    line-height: normal;
-
-    display: flex;
-    text-align: left;
 }
-#rodape
+
+footer
 {
-    padding: 10px;
-    color:#E8DCC3 ;
-    font-weight: 500;
-    background-color: #4B2E2B ;
+    background-color: black;
+    color: white;
     text-align: center;
-    
-}
-#rodape a
-{
-    text-decoration: none;
-    margin-right: 4px ;
-    margin-left: 4px;
-    color: #B56A50;
-    font-weight: bold;
+    padding: 10px;
 }

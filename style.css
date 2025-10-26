@@ -59,12 +59,12 @@ section
     line-height:2em ;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3.7vw;
+    font-size: clamp(1.5em, 3.7vw, 9em);
 
 }
 section.normal
 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(243, 222, 222);
     color: rgb(0, 0, 0);
 }
 
@@ -76,65 +76,12 @@ section.imagem
 }
 section.imagem > p
 {
-    display: flex;
-    justify-content: start;
-
-    background-size: cover;
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    
-   
-    width: 100vw;
-    height: 87vh; 
+  display: inline-block;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.164);  
 }
-#foto1
-{
-    background-image: url('imagens/background001.jpg');
-   
-}
-#foto2
-{
-    background-image: url('imagens/background002.jpg');
-
-}
-.pfotos
-{
-    
-    background-color: #00000065;
-
-    font-family: 'Sriracha';
-    color: white;
-    font-size: clamp(1.5em, 4vw, 3em);
-
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px ;
-    padding-top: 20px ;
-
-    margin-left: 30px;
-    margin-right: 20px ;
-    margin-bottom: 20px ;
-    margin-top: 20px ;
-    
-
-    position: relative;
-
-
-    width: 100% ;
-    min-height: 200px;
-    max-width: 500px;
-    line-height: normal;
-
-    display: flex;
-    text-align: left;
-}
-#rodape
+footer
 {
     padding: 10px;
-    color:#E8DCC3 ;
-    font-weight: 500;
-    background-color: #4B2E2B ;
     text-align: center;
-    padding: 10px;
 }
